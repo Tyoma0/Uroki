@@ -63,7 +63,20 @@ while (isWinner === false) {
  userChoise = prompt('Введите \'камень\', \'ножницы\' или \'бумагу\'.')
 userChoise =  userChoise.toLowerCase()
 if (userChoise === "камень"|| userChoise ==="ножницы"|| userChoise ==="бумага"){
-Math.random()
+    const randomIndex = Math.floor(Math.random() * 3)
+    computerChoise = words[randomIndex]
+    console.log(computerChoise,userChoise);
+    if(userChoise === computerChoise){
+        alert('Nichya')
+    } else if ((userChoise ==='камень'&& computerChoise ==='ножницы') ||
+              (userChoise ==='ножницы'&& computerChoise ==='бумага')  ||
+              (userChoise ==='бумага'&& computerChoise ==='камень')
+     )     {
+alert('Smuhlival,davai po novoi')
+isWinner = true
+    } else {
+        alert('Hahaha loh, botu proigral')
+    }
 
 
 
