@@ -86,3 +86,4 @@ isWinner = true
     alert("game over! Напиши нормально")
 }
 }
+//урок 3
