@@ -55,9 +55,20 @@
 let isWinner = false
 let userChoise;
 let computerChoise;
+const words =["камень","ножницы","бумага"]
+console.log(Math.floor(Math.random()*3));
+
 
 while (isWinner === false) {
  userChoise = prompt('Введите \'камень\', \'ножницы\' или \'бумагу\'.')
 userChoise =  userChoise.toLowerCase()
-if (userChoise == "камень"|| userChoise ==="ножницы"|| userChoise ==="бумага")
+if (userChoise === "камень"|| userChoise ==="ножницы"|| userChoise ==="бумага"){
+Math.random()
+
+
+
+
+} else{
+    alert("game over! Напиши нормально")
+}
 }
