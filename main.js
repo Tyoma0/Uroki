@@ -68,7 +68,8 @@ if (userChoise === "камень"|| userChoise ==="ножницы"|| userChoise 
     console.log(computerChoise,userChoise);
     if(userChoise === computerChoise){
         alert('Nichya')
-    } else if ((userChoise ==='камень'&& computerChoise ==='ножницы') ||
+    } else if (
+              (userChoise ==='камень'&& computerChoise ==='ножницы') ||
               (userChoise ==='ножницы'&& computerChoise ==='бумага')  ||
               (userChoise ==='бумага'&& computerChoise ==='камень')
      )     {
